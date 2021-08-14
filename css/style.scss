@@ -1,16 +1,26 @@
 .Header {
-  margin-top:126px;
-  margin-bottom:128px;
+  margin-top:115px;
+  margin-bottom:109.5px;
   align-items:center;
+  font-family:Arial;
+  .logo{
+    margin-left:20px;
+  }
   .HeaderContents {
     display:flex;
     justify-content: space-between;
     .HeaderList  {
       display:flex;
       list-style:none;
-      align-items:center;
+      margin-right:20px;
+      margin-top:10px;
       .HeaderList__item{
-        font-size:14.4px;
+        letter-spacing: 0;
+        a{
+          color:#24292E;
+          text-decoration: none;
+          font-size:14.4px;
+        }
       }
       .HeaderList__item:not(:first-of-type) {
         margin-left:30px;
@@ -26,6 +36,7 @@
   max-width:960px;
   padding:0 4%;
   margin:0 auto; 
+  font-family:Arial;
 }
 
 .MainImage__image{
@@ -33,15 +44,18 @@
   height:420px;
   object-fit: cover;
 }
-.About__Contents{
-  margin-top:80px;
+.About__contents{
+  margin-top:78px;
   .About__title{
     text-align:center;
     font-size:24px;
+    font-family:Arial;;
   }
+  .About__texts{
+    margin-left:10px;
   .About__name{
     font-size:14.4px;
-    margin-top:65px;
+    margin-top:60px;
   }
   .About__adress{
     font-size:14.4px;
@@ -49,5 +63,133 @@
   }
   .About__text{
     margin-top:30px;
+    font-size:14.4px;
+    font-family:Arial;
   }
+ }
+}
+#Works{
+  margin-top:130px;
+  .Works__title{
+    text-align:center;
+    font-size:24px;
+  }
+  .Works__images{
+    margin-top:65px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:24px;
+    margin-left:5px;
+    
+    .Works__image{
+      width:264px;
+      height:172px;
+    }
+  }
+}
+#News{
+  margin-top:153px;
+  .News__title{
+    text-align:center;
+    font-size:24px;
+  }
+  .News__list{
+    margin-top:60px;
+    list-style:none;
+    margin-left:20px;
+  }
+  .News__listitem{
+    border-bottom:1px solid #C8C8C8;
+    padding:11.5px 0;
+    display:flex;
+    font-size:14.4px;
+    font-family:Arial;
+    align-items:center;
+  }
+  .News__listitem:first-of-type{
+    border-top:1px solid #C8C8C8;
+  }
+  .News__listtext{
+    margin-left:90px;
+  }
+}
+#Contact{
+  margin-top:128px;
+  .Contact__title{
+    text-align: center;
+    font-size:24px;
+  }
+  .Contact__form{
+    margin-top:65px;
+    margin-left:10px;
+    text-align: justify;
+    .Contact__name{
+      display:flex;
+      justify-content: space-between;
+      .Contact__name-input{
+        border:1px solid #C8C8C8;
+        width:723px;
+        height:44px;
+        margin-right:8px;
+      }
+      .Contact__name-title{
+        font-size:14.4px;
+      }
+    }
+    .Contact__mail{
+      display:flex;
+      margin-top:10px;
+      justify-content: space-between;
+      .Contact__mail-title{
+        font-size:14.4px;
+        font-family:Arial;
+        text-align:left
+      }
+      .Contact__mail-input{
+        border: 1px solid #C8C8C8;
+        width:723px;
+        height:44px;
+        margin-right:8px;
+      }
+    }
+    .Contact__message{
+      display:flex;
+      margin-top:10px;
+      justify-content: space-between;
+      .Contact__message-title{
+        font-size:14.4px;
+      }
+      .Contact__message-input{
+        border:1px solid #C8C8C8;
+        width:723px;
+        height:160px;
+        margin-right:8px;
+      }
+    }
+    .Submit-btn{
+    text-align: center;
+    input{
+      width:200px;
+      height:45px;
+      margin-top:30px;
+      color:#FFFFFF;
+      background-color: #24292E;
+    }
+    }
+  }
+}
+footer{
+  margin-top:130px;
+  justify-content: center;
+  background-color: #24292E;
+  color:#FFFFFF;
+  width:100%;
+  height:31px;
+  font-size:10px;
+  display:flex;
+  align-items: center;
+  font-family:Arial;
+}
+@media(maxwidth:600px){
+  
 }

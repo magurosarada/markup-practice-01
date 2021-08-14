@@ -1,9 +1,14 @@
 .Header {
-  margin-top: 126px;
-  margin-bottom: 128px;
+  margin-top: 115px;
+  margin-bottom: 109.5px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: Arial;
+}
+
+.Header .logo {
+  margin-left: 20px;
 }
 
 .Header .HeaderContents {
@@ -20,12 +25,17 @@
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
 .Header .HeaderContents .HeaderList .HeaderList__item {
+  letter-spacing: 0;
+}
+
+.Header .HeaderContents .HeaderList .HeaderList__item a {
+  color: #24292E;
+  text-decoration: none;
   font-size: 14.4px;
 }
 
@@ -42,6 +52,7 @@
   max-width: 960px;
   padding: 0 4%;
   margin: 0 auto;
+  font-family: Arial;
 }
 
 .MainImage__image {
@@ -51,26 +62,203 @@
      object-fit: cover;
 }
 
-.About__Contents {
-  margin-top: 80px;
+.About__contents {
+  margin-top: 78px;
 }
 
-.About__Contents .About__title {
+.About__contents .About__title {
+  text-align: center;
+  font-size: 24px;
+  font-family: Arial;
+}
+
+.About__contents .About__texts {
+  margin-left: 10px;
+}
+
+.About__contents .About__texts .About__name {
+  font-size: 14.4px;
+  margin-top: 60px;
+}
+
+.About__contents .About__texts .About__adress {
+  font-size: 14.4px;
+  margin-top: 30px;
+}
+
+.About__contents .About__texts .About__text {
+  margin-top: 30px;
+  font-size: 14.4px;
+  font-family: Arial;
+}
+
+#Works {
+  margin-top: 130px;
+}
+
+#Works .Works__title {
   text-align: center;
   font-size: 24px;
 }
 
-.About__Contents .About__name {
-  font-size: 14.4px;
+#Works .Works__images {
   margin-top: 65px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  margin-left: 5px;
 }
 
-.About__Contents .About__adress {
+#Works .Works__images .Works__image {
+  width: 264px;
+  height: 172px;
+}
+
+#News {
+  margin-top: 153px;
+}
+
+#News .News__title {
+  text-align: center;
+  font-size: 24px;
+}
+
+#News .News__list {
+  margin-top: 60px;
+  list-style: none;
+  margin-left: 20px;
+}
+
+#News .News__listitem {
+  border-bottom: 1px solid #C8C8C8;
+  padding: 11.5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 14.4px;
-  margin-top: 30px;
+  font-family: Arial;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.About__Contents .About__text {
+#News .News__listitem:first-of-type {
+  border-top: 1px solid #C8C8C8;
+}
+
+#News .News__listtext {
+  margin-left: 90px;
+}
+
+#Contact {
+  margin-top: 128px;
+}
+
+#Contact .Contact__title {
+  text-align: center;
+  font-size: 24px;
+}
+
+#Contact .Contact__form {
+  margin-top: 65px;
+  margin-left: 10px;
+  text-align: justify;
+}
+
+#Contact .Contact__form .Contact__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Contact .Contact__form .Contact__name .Contact__name-input {
+  border: 1px solid #C8C8C8;
+  width: 723px;
+  height: 44px;
+  margin-right: 8px;
+}
+
+#Contact .Contact__form .Contact__name .Contact__name-title {
+  font-size: 14.4px;
+}
+
+#Contact .Contact__form .Contact__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Contact .Contact__form .Contact__mail .Contact__mail-title {
+  font-size: 14.4px;
+  font-family: Arial;
+  text-align: left;
+}
+
+#Contact .Contact__form .Contact__mail .Contact__mail-input {
+  border: 1px solid #C8C8C8;
+  width: 723px;
+  height: 44px;
+  margin-right: 8px;
+}
+
+#Contact .Contact__form .Contact__message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Contact .Contact__form .Contact__message .Contact__message-title {
+  font-size: 14.4px;
+}
+
+#Contact .Contact__form .Contact__message .Contact__message-input {
+  border: 1px solid #C8C8C8;
+  width: 723px;
+  height: 160px;
+  margin-right: 8px;
+}
+
+#Contact .Contact__form .Submit-btn {
+  text-align: center;
+}
+
+#Contact .Contact__form .Submit-btn input {
+  width: 200px;
+  height: 45px;
   margin-top: 30px;
+  color: #FFFFFF;
+  background-color: #24292E;
+}
+
+footer {
+  margin-top: 130px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #24292E;
+  color: #FFFFFF;
+  width: 100%;
+  height: 31px;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Arial;
 }
 /*# sourceMappingURL=style.css.map */
