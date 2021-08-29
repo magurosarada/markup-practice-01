@@ -190,6 +190,181 @@ footer{
   align-items: center;
   font-family:Arial;
 }
-@media(maxwidth:600px){
+
+@media(max-width:600px){
+ .Header {
+   margin-top:12px;
+   margin-bottom:2px;
+
+   .HeaderContents {
+    flex-direction: column;
+
+    .logo {
+      text-align:center;
+      margin-left:0;
+      margin-right:2px;
+    }
+
+    .HeaderList {
+      justify-content: center;
+      margin-left:20px;
+      margin-top:0;
+      
+      .HeaderList__item {
+
+        a{
+          font-size:12.8px;
+        }
+      }
+
+      .HeaderList__item.HeaderList__item:not(:first-of-type) {
+        margin-left:20px;
+      }
+     }
+   }
+  }
+
+  .MainImage {
+
+    .MainImage__image {
+      width:100%;
+  }
+ }
+
+ #About {
+
+   .About__contents {
+     margin-top:75px;
+     
+     .About__texts {
+       margin-left:0;
+       .About__name {
+         margin-top:38px;
+       }
+       .About__text{
+         margin-top:25px;
+         line-height:25px;
+         .About__texthide{
+          display:none;
+        }
+       }
+     }
+   }
+ }
+
+ #Works {
+   margin-top:65px;
+   .Works__images {
+     grid-template-columns: 1fr;
+     gap:23px;
+     margin-left:0;
+     margin-top:40px;
+
+     .Works__image {
+       height:225px;
+       width:100%;
+     }
+   }
+ }
+
+ #News {
+   margin-top:93px;
+   
+   .News__list {
+     margin-top:38px;
+     width:345px;
+     margin-left:0;
+
+     .News__listitem:first-child {
+       padding:12px 0;
+     }
+
+     .News__listitem:not(:first-child) {
+       padding: 14px 0;
+       margin-top:0;
+     }
+
+     .News__listitem {
+       flex-direction: column;
+       margin-top:0px;
+       margin-bottom: 0;
+
+       .News__listalign {
+         margin-right:auto;
+         width:304px;
+         margin-top:0;
+         margin-left:14px;
+       }
+
+       .News__listtext {
+         margin-left:14px;
+         font-size:14.4px;
+         width:304px;
+         height:37px;
+         margin-right:auto;
+       }
+
+       .News__listtext:not(:first-child) {
+
+        margin-bottom:2px;
+        
+       }
+     }
+   }
+ }
+
+  #Contact {
+    margin-top:70px;
+
+    .Contact__form {
+      margin-left:0;
+      margin-top:37px;
+
+      .Contact__name {
+        flex-direction:column;
+        
+        .Contact__name-input{
+          height:43px;
+          width:345px;
+        }
+      }
+
+      .Contact__mail {
+        flex-direction:column;
+
+        .Contact__mail-input{
+          width:345px;
+
+        }
+      }
+
+      .Contact__message {
+        flex-direction: column;
+
+        .Contact__message-input{
+          width:345px;
+
+        }
+      }
+
+      .Submit-btn{
+
+        input{
+
+          margin-right:0;
+
+        }
+      }
+    }
+  }
+  #Footer{
+    margin-top:70px;
+  }
+}
+
+@media screen and (min-width:601px){
   
+  .About__adresshidepc{
+    display:none;
+  }
 }
