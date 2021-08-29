@@ -57,6 +57,7 @@
 
 .MainImage__image {
   width: 100%;
+  max-width: 100%;
   height: 420px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -105,8 +106,8 @@
   margin-top: 65px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-left: 5px;
 }
@@ -114,6 +115,8 @@
 #Works .Works__images .Works__image {
   width: 264px;
   height: 172px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #News {
@@ -241,9 +244,15 @@
   margin-top: 30px;
   color: #FFFFFF;
   background-color: #24292E;
+  margin-right: 8px;
 }
 
-footer {
+#Contact .Contact__form .Submit-btn input:hover {
+  background-color: #FFFFFF;
+  color: #24292E;
+}
+
+#Footer {
   margin-top: 130px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -260,5 +269,155 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   font-family: Arial;
+}
+
+@media (max-width: 600px) {
+  .Header {
+    margin-top: 12px;
+    margin-bottom: 2px;
+  }
+  .Header .HeaderContents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Header .HeaderContents .logo {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 2px;
+  }
+  .Header .HeaderContents .HeaderList {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 20px;
+    margin-top: 0;
+  }
+  .Header .HeaderContents .HeaderList .HeaderList__item a {
+    font-size: 12.8px;
+  }
+  .Header .HeaderContents .HeaderList .HeaderList__item.HeaderList__item:not(:first-of-type) {
+    margin-left: 20px;
+  }
+  .MainImage .MainImage__image {
+    width: 100%;
+  }
+  #About .About__contents {
+    margin-top: 75px;
+  }
+  #About .About__contents .About__texts {
+    margin-left: 0;
+  }
+  #About .About__contents .About__texts .About__name {
+    margin-top: 38px;
+  }
+  #About .About__contents .About__texts .About__text {
+    margin-top: 25px;
+    line-height: 25px;
+  }
+  #About .About__contents .About__texts .About__text .About__texthide {
+    display: none;
+  }
+  #Works {
+    margin-top: 65px;
+  }
+  #Works .Works__images {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 23px;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  #Works .Works__images .Works__image {
+    height: 225px;
+    width: 100%;
+  }
+  #News {
+    margin-top: 93px;
+  }
+  #News .News__list {
+    margin-top: 38px;
+    width: 345px;
+    margin-left: 0;
+  }
+  #News .News__list .News__listitem:first-child {
+    padding: 12px 0;
+  }
+  #News .News__list .News__listitem:not(:first-child) {
+    padding: 14px 0;
+    margin-top: 0;
+  }
+  #News .News__list .News__listitem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 0;
+  }
+  #News .News__list .News__listitem .News__listalign {
+    margin-right: auto;
+    width: 304px;
+    margin-top: 0;
+    margin-left: 14px;
+  }
+  #News .News__list .News__listitem .News__listtext {
+    margin-left: 14px;
+    font-size: 14.4px;
+    width: 304px;
+    height: 37px;
+    margin-right: auto;
+  }
+  #News .News__list .News__listitem .News__listtext:not(:first-child) {
+    margin-bottom: 2px;
+  }
+  #Contact {
+    margin-top: 70px;
+  }
+  #Contact .Contact__form {
+    margin-left: 0;
+    margin-top: 37px;
+  }
+  #Contact .Contact__form .Contact__name {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #Contact .Contact__form .Contact__name .Contact__name-input {
+    height: 43px;
+    width: 345px;
+  }
+  #Contact .Contact__form .Contact__mail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #Contact .Contact__form .Contact__mail .Contact__mail-input {
+    width: 345px;
+  }
+  #Contact .Contact__form .Contact__message {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #Contact .Contact__form .Contact__message .Contact__message-input {
+    width: 345px;
+  }
+  #Contact .Contact__form .Submit-btn input {
+    margin-right: 0;
+  }
+  #Footer {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .About__adresshidepc {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
