@@ -57,7 +57,7 @@
 
 .MainImage__image {
   width: 100%;
-  max-width: 100%;
+  max-width: 1920px;
   height: 420px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -91,6 +91,7 @@
   margin-top: 30px;
   font-size: 14.4px;
   font-family: Arial;
+  text-align: justify;
 }
 
 #Works {
@@ -113,7 +114,7 @@
 }
 
 #Works .Works__images .Works__image {
-  width: 264px;
+  width: 100%;
   height: 172px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -167,6 +168,7 @@
 #Contact .Contact__form {
   margin-top: 65px;
   margin-left: 10px;
+  margin-right: 7.5px;
   text-align: justify;
 }
 
@@ -181,13 +183,14 @@
 
 #Contact .Contact__form .Contact__name .Contact__name-input {
   border: 1px solid #C8C8C8;
-  width: 723px;
+  width: 100%;
   height: 44px;
-  margin-right: 8px;
 }
 
 #Contact .Contact__form .Contact__name .Contact__name-title {
   font-size: 14.4px;
+  width: 42px;
+  margin-right: 75px;
 }
 
 #Contact .Contact__form .Contact__mail {
@@ -204,13 +207,14 @@
   font-size: 14.4px;
   font-family: Arial;
   text-align: left;
+  width: 55px;
+  margin-right: 70px;
 }
 
 #Contact .Contact__form .Contact__mail .Contact__mail-input {
   border: 1px solid #C8C8C8;
-  width: 723px;
+  width: 100%;
   height: 44px;
-  margin-right: 8px;
 }
 
 #Contact .Contact__form .Contact__message {
@@ -225,13 +229,14 @@
 
 #Contact .Contact__form .Contact__message .Contact__message-title {
   font-size: 14.4px;
+  width: 71px;
+  margin-right: 46px;
 }
 
 #Contact .Contact__form .Contact__message .Contact__message-input {
   border: 1px solid #C8C8C8;
-  width: 723px;
+  width: 100%;
   height: 160px;
-  margin-right: 8px;
 }
 
 #Contact .Contact__form .Submit-btn {
@@ -302,6 +307,8 @@
   }
   .MainImage .MainImage__image {
     width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   #About .About__contents {
     margin-top: 75px;
@@ -338,7 +345,7 @@
   }
   #News .News__list {
     margin-top: 38px;
-    width: 345px;
+    width: 100%;
     margin-left: 0;
   }
   #News .News__list .News__listitem:first-child {
@@ -353,21 +360,22 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 0;
   }
   #News .News__list .News__listitem .News__listalign {
     margin-right: auto;
-    width: 304px;
+    width: 100%;
     margin-top: 0;
     margin-left: 14px;
   }
   #News .News__list .News__listitem .News__listtext {
     margin-left: 14px;
     font-size: 14.4px;
-    width: 304px;
+    max-width: 100%;
     height: 37px;
-    margin-right: auto;
+    margin-right: 20px;
+    text-align: left;
   }
   #News .News__list .News__listitem .News__listtext:not(:first-child) {
     margin-bottom: 2px;
@@ -387,7 +395,7 @@
   }
   #Contact .Contact__form .Contact__name .Contact__name-input {
     height: 43px;
-    width: 345px;
+    width: 100%;
   }
   #Contact .Contact__form .Contact__mail {
     -webkit-box-orient: vertical;
@@ -396,7 +404,7 @@
             flex-direction: column;
   }
   #Contact .Contact__form .Contact__mail .Contact__mail-input {
-    width: 345px;
+    width: 100%;
   }
   #Contact .Contact__form .Contact__message {
     -webkit-box-orient: vertical;
@@ -405,7 +413,7 @@
             flex-direction: column;
   }
   #Contact .Contact__form .Contact__message .Contact__message-input {
-    width: 345px;
+    width: 100%;
   }
   #Contact .Contact__form .Submit-btn input {
     margin-right: 0;
